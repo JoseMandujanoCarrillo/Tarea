@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Información Personal</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: left; 
+        display: flex; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+    }
+    
+    .spacer {
+        height: 20px; 
+    }
+    
+    label {
+        display: inline-block;
+        width: 150px; 
+        text-align: right; 
+        margin-right: 10px; 
+    }
+    
+    input {
+        width: calc(100px);
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+    
+    input[type="date"] {
+        width: calc(100px);
+    }
+    
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<form action="#" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required>
+    
+    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+    
+
+    
+    <label for="ciudad_nacimiento">Ciudad de Nacimiento:</label>
+    <input type="text" id="ciudad_nacimiento" name="ciudad_nacimiento" required>
+    
+    <label for="pais_nacimiento">País de Nacimiento:</label>
+    <input type="text" id="pais_nacimiento" name="pais_nacimiento" required>
+    
+    <label for="nacionalidad">Nacionalidad:</label>
+    <input type="text" id="nacionalidad" name="nacionalidad" required>
+    
+    <label for="num_pasaporte">Número de Pasaporte:</label>
+    <input type="text" id="num_pasaporte" name="num_pasaporte" required>
+    
+
+    
+    <label for="pais_emision_pasaporte">País de Emisión del Pasaporte:</label>
+    <input type="text" id="pais_emision_pasaporte" name="pais_emision_pasaporte" required>
+    
+    <label for="fecha_emision_pasaporte">Fecha de Emisión del Pasaporte:</label>
+    <input type="date" id="fecha_emision_pasaporte" name="fecha_emision_pasaporte" required>
+    
+    <label for="fecha_vencimiento_pasaporte">Fecha de Vencimiento del Pasaporte:</label>
+    <input type="date" id="fecha_vencimiento_pasaporte" name="fecha_vencimiento_pasaporte" required>
+    
+    <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>

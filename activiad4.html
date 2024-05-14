@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapa</title>
+<style>
+    #map {
+        height: 400px;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+
+<h1>No tengo ninguna api key</h1>
+
+<div id="map"></div>
+
+<script>
+    function initMap() {
+        var direccion = {lat: 40.712776, lng: -74.005974};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: direccion
+        });
+
+        var marker = new google.maps.Marker({
+            position: direccion,
+            map: map,
+            title: 'Dirección'
+        });
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
+
+</body>
+</html>
